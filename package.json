@@ -1,0 +1,35 @@
+{
+  "name": "postcss-disabled",
+  "version": "0.0.1",
+  "description": "PostCSS plugin to add disabled attributes and disabled classes when the :disabled pseudo class is present.",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "disabled"
+  ],
+  "author": "Joe Cocco <cocco3@gmail.com>",
+  "license": "MIT",
+  "repository": "cocco3/postcss-disabled",
+  "bugs": {
+    "url": "https://github.com/cocco3/postcss-disabled/issues"
+  },
+  "homepage": "https://github.com/cocco3/postcss-disabled",
+  "dependencies": {
+    "postcss": "^5.2.6"
+  },
+  "devDependencies": {
+    "eslint": "^3.12.2",
+    "eslint-config-postcss": "^2.0.2",
+    "jest": "^18.0.0"
+  },
+  "scripts": {
+    "test": "jest && eslint *.js"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-postcss/es5",
+    "env": {
+      "jest": true
+    }
+  }
+}
