@@ -19,6 +19,7 @@
     "postcss": "^5.2.6"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
     "eslint": "^3.12.2",
     "eslint-config-postcss": "^2.0.2",
     "jest": "^18.0.0"

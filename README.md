@@ -8,14 +8,14 @@
 
 ```css
 .foo:disabled {
-  color: gray;
+  background-color: #f9f9f9;
 }
 ```
 
 ```css
 .foo:disabled,
 .foo[disabled] {
-  color: gray
+  background-color: #f9f9f9;
 }
 ```
 
@@ -36,14 +36,14 @@ Adds the [disabled] attribute selector
 
 ```css
 .foo:disabled {
-  color: gray;
+  background-color: #f9f9f9;
 }
 ```
 
 ```css
 .foo:disabled,
 .foo[disabled] {
-  color: gray
+  background-color: #f9f9f9;
 }
 ```
 
@@ -54,13 +54,13 @@ Adds a .disabled class
 
 ```css
 .foo:disabled {
-  color: gray;
+  background-color: #f9f9f9;
 }
 ```
 
 ```css
 .foo:disabled,
 .foo.disabled {
-  color: gray
+  background-color: #f9f9f9;
 }
 ```

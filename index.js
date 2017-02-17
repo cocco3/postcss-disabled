@@ -7,7 +7,7 @@ module.exports = postcss.plugin('postcss-disabled', function (opts) {
         addClass: false
     };
 
-    return function (root, result) {
+    return function (root) {
 
         root.walkRules(function (rule) {
 
@@ -20,14 +20,18 @@ module.exports = postcss.plugin('postcss-disabled', function (opts) {
                     if (selector.indexOf(':disabled') !== -1) {
 
                         if (opts.addClass) {
-                            disabledSelectors.push(selector.replace(/:disabled/g, '.disabled'));
+                            disabledSelectors.push(
+                                selector.replace(/:disabled/g, '.disabled')
+                            );
                         }
 
                         if (opts.addAttribute) {
-                            disabledSelectors.push(selector.replace(/:disabled/g, '[disabled]'));
+                            disabledSelectors.push(
+                                selector.replace(/:disabled/g, '[disabled]')
+                            );
                         }
                     }
-                })
+                });
 
                 if (disabledSelectors.length) {
                     rule.selectors = rule.selectors.concat(disabledSelectors);
