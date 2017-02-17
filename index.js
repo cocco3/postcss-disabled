@@ -1,11 +1,14 @@
 var postcss = require('postcss');
+var extend = require('util')._extend;
+
+var defaultOptions = {
+    addAttribute: true,
+    addClass: false
+};
 
 module.exports = postcss.plugin('postcss-disabled', function (opts) {
 
-    opts = opts || {
-        addAttributes: true,
-        addClass: false
-    };
+    opts = extend(extend({}, defaultOptions), opts);
 
     return function (root) {
 

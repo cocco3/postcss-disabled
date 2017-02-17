@@ -29,7 +29,7 @@ See [PostCSS] docs for examples for your environment.
 
 ## Options
 
-### addAttributes
+### addAttribute
 type: `Boolean`
 default: `true`
 Adds the [disabled] attribute selector
