@@ -1,6 +1,6 @@
 {
   "name": "postcss-disabled",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "PostCSS plugin to add disabled attributes and disabled classes when the :disabled pseudo class is present.",
   "keywords": [
     "postcss",
