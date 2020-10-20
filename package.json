@@ -15,21 +15,40 @@
     "url": "https://github.com/cocco3/postcss-disabled/issues"
   },
   "homepage": "https://github.com/cocco3/postcss-disabled",
-  "dependencies": {
-    "postcss": "^5.2.6"
-  },
   "devDependencies": {
-    "eslint": "^3.12.2",
-    "eslint-config-postcss": "^2.0.2",
-    "jest": "^18.0.0"
+    "@logux/eslint-config": "^41.0.1",
+    "eslint": "^7.11.0",
+    "eslint-config-postcss": "^4.0.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prefer-let": "^1.1.0",
+    "eslint-plugin-prettierx": "^0.14.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-unicorn": "^23.0.0",
+    "jest": "^26.6.0",
+    "postcss": "^8.1.2"
+  },
+  "peerDependencies": {
+    "postcss": "^8.0.0"
   },
   "scripts": {
     "test": "jest && eslint *.js"
   },
+  "engines": {
+    "node": ">=10"
+  },
   "eslintConfig": {
-    "extends": "eslint-config-postcss/es5",
+    "extends": "eslint-config-postcss",
     "rules": {
-      "max-len": "off"
+      "max-len": "off",
+      "jest/consistent-test-it": "off",
+      "jest/no-identical-title": "off",
+      "import/order": "off",
+      "prefer-let/prefer-let": "off"
     },
     "env": {
       "jest": true
