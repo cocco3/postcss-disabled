@@ -1,10 +1,7 @@
-# PostCSS Disabled [![Build Status][ci-img]][ci]
+# PostCSS Disabled
 
-[PostCSS] plugin to add a disabled attribute and/or a disabled class when the ```:disabled``` pseudo class is present.
-
-[PostCSS]: https://github.com/postcss/postcss
-[ci-img]:  https://travis-ci.org/cocco3/postcss-disabled.svg
-[ci]:      https://travis-ci.org/cocco3/postcss-disabled
+[PostCSS](https://github.com/postcss/postcss) plugin to add a disabled attribute
+and/or a disabled class when the `:disabled` pseudo class is present.
 
 ```css
 /* Input */
@@ -23,18 +20,19 @@
 
 ## Usage
 
-```js
-postcss([ require('postcss-disabled') ])
-```
+See [PostCSS docs](https://github.com/postcss/postcss#usage) for examples for your environment.
 
-See [PostCSS] docs for examples for your environment.
+```js
+postcss([require('postcss-disabled')]);
+```
 
 ## Options
 
 ### addAttribute
-type: `Boolean`
-default: `true`
-Adds the [disabled] attribute selector
+
+- type: `Boolean`
+- default: `true`
+- Adds a `[disabled]` attribute selector
 
 ```css
 /* Input */
@@ -52,9 +50,10 @@ Adds the [disabled] attribute selector
 ```
 
 ### addClass
-type: `Boolean`
-default: `false`
-Adds a .disabled class
+
+- type: `Boolean`
+- default: `false`
+- Adds a `.disabled` class selector
 
 ```css
 /* Input */
@@ -70,3 +69,7 @@ Adds a .disabled class
   background-color: #f9f9f9;
 }
 ```
+
+## Contributing
+
+- [Writing a PostCSS plugin](https://github.com/postcss/postcss/blob/main/docs/writing-a-plugin.md)
