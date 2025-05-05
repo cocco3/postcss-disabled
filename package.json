@@ -14,7 +14,10 @@
   },
   "author": "Joe Cocco <cocco3@gmail.com>",
   "license": "MIT",
-  "repository": "cocco3/postcss-disabled",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cocco3/postcss-disabled.git"
+  },
   "engines": {
     "node": ">=18.0.0"
   },
