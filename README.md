@@ -1,3 +1,8 @@
+> [!IMPORTANT]
+> This plugin was originally created at a time when [:disabled](https://caniuse.com/?search=%3Adisabled) was not supported in all popular browsers.
+>
+> You likely no longer need this plugin, but just in case, it has been updated to support PostCSS v8.
+
 # PostCSS Disabled
 
 [PostCSS](https://github.com/postcss/postcss) plugin to add a disabled attribute
@@ -20,10 +25,15 @@ and/or a disabled class when the `:disabled` pseudo class is present.
 
 ## Usage
 
-See [PostCSS docs](https://github.com/postcss/postcss#usage) for examples for your environment.
+See [PostCSS usage docs](https://github.com/postcss/postcss#usage) for your specific environment.
 
 ```js
-postcss([require('postcss-disabled')]);
+plugins: [
+  require('postcss-disabled')({
+    addAttribute: true,
+    addClass: true,
+  }),
+];
 ```
 
 ## Options
